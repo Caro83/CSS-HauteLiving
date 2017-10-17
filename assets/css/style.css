@@ -1,5 +1,47 @@
 div#slider {
 	width: 100%;
-	max-width: 1500px;
 	height: auto;
+	max-width: 9999px;
+}
+
+div#slider figure{
+	position: relative;
+	width: 400%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	text-align: left;
+}
+
+div#slider figure img {
+	width: 25%;
+	height: auto;
+	float: left;
+}
+
+div#slider {
+	width: 100%;
+	max-width: 9999px;
+	overflow: hidden;
+}
+
+@keyframes slidy {
+	0% { left: 0%; }
+	25% { left: 0%; }
+	30% { left: -100%;}
+	55% { left: -100%;}
+	60% { left: -200%;}
+	85% { left: -200%;}
+	100% 25% { left: -300%;}
+}
+
+div#slider figure {
+	position: relative;
+	width: 400%;
+	margin: 0;
+	padding: 0;
+	font-size: 0
+	left: 0;
+	text-align: left;
+	animation: 30s slidy infinite;
 }
