@@ -1,3 +1,5 @@
+
+/*------- SLIDER ---------- */
 div#slider {
 	width: 100%;
 	height: auto;
@@ -45,3 +47,14 @@ div#slider figure {
 	text-align: left;
 	animation: 30s slidy infinite;
 }
+
+/*-------- NAV BAR ------ */
+
+nav {
+	background-color: #000;
+}
+
+nav img {
+	max-width: 30px;
+}
+/*-------- Section New arrivals ------ */
