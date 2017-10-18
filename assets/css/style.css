@@ -1,5 +1,20 @@
+/*------- FONT ----------*/
+@font-face {
+	font-family: 'MaisonNeue-Book', sans-serif;
+	src: url('../fonts/Maison Neue/MaisonNeue-Book.woff2');
+}
 
-/*------- SLIDER ---------- */
+@font-face {
+	font-family: 'MaisonNeueMono-Regular', sans-serif;
+	src: url('MaisonNeueMono-Regular.woff2');
+}
+
+/*--------BODY ------------*/
+body {
+	font-family: 'MaisonNeueMono-Regular', sans-serif;
+	text-transform: uppercase;
+}
+/*------- SLIDER ---------- 
 div#slider {
 	width: 100%;
 	height: auto;
@@ -47,14 +62,96 @@ div#slider figure {
 	text-align: left;
 	animation: 30s slidy infinite;
 }
+ */
+
+/*------- SLIDER ---------- */
+div#slider div {
+	width: 100%;
+	height: auto;
+	max-width: 9999px;
+}
+
+div#slider div div {
+	position: relative;
+	width: 400%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	text-align: left;
+}
+
+div#slider div div img {
+	width: 25%;
+	height: auto;
+	float: left;
+}
+
+div#slider {
+	width: 100%;
+	max-width: 9999px;
+	overflow: hidden;
+}
+
+@keyframes slidy {
+	0% { left: 0%; }
+	25% { left: 0%; }
+	30% { left: -100%;}
+	55% { left: -100%;}
+	60% { left: -200%;}
+	85% { left: -200%;}
+	100% 25% { left: -300%;}
+}
+
+div#slider div div {
+	position: relative;
+	width: 400%;
+	margin: 0;
+	padding: 0;
+	font-size: 0
+	left: 0;
+	text-align: left;
+	animation: 30s slidy infinite;
+}
 
 /*-------- NAV BAR ------ */
 
 nav {
 	background-color: #000;
+	display: flex;
+	opacity: 0.5;
 }
 
 nav img {
 	max-width: 30px;
 }
+
+li {
+	list-style: none;
+}
+/*-------- Main ------ */
+.container-fluid h3 {
+	text-align: center;
+}
 /*-------- Section New arrivals ------ */
+
+/*-------- BUTTON READ THE JOURNAL ------ */
+button {
+	background-color: #0A0A0A;
+	color: #fff;
+}
+
+/*-------- Footer ------ */
+footer {
+	background-color: #0A0A0A;
+	color: #fff;
+}
+footer ul {
+	display: flex;
+}
+
+footer h6 {
+	color: #6F6F75;
+}
+footer li {
+	flex-direction: row;
+}
