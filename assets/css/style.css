@@ -11,8 +11,31 @@
 
 /*--------BODY ------------*/
 body {
-	font-family: 'MaisonNeueMono-Regular', sans-serif;
+	font-family: 'MaisonNeue-Book', sans-serif;
+}
+
+/*-------- Titre-------- */
+
+h2, h3, h4, h5 {
+	color: #0A0A0A;
 	text-transform: uppercase;
+}
+
+h6 {
+	color: #6F6F75;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.4rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+}
+
+h5 {
+	font-size: 0.9rem;
 }
 /*------- SLIDER ---------- 
 div#slider {
@@ -134,24 +157,114 @@ li {
 }
 /*-------- Section New arrivals ------ */
 
-/*-------- BUTTON READ THE JOURNAL ------ */
-button {
+
+/*-------- Section Journal ------ */
+#journal {
+	background-color: #FCF6EE;
+}
+
+#journal div div:last-child div {
+	background-color: #0A0A0A;
+}
+/*-------- Button "read the journal" ------ */
+.btn {
 	background-color: #0A0A0A;
 	color: #fff;
+	padding: 1.5rem;
+	border: 0px;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	margin: 0 auto;
+	border-radius: 0rem;
+}
+
+.btn div::after {
+	content: url('../img/icon-arrow-right.png');
+	padding-left: 1.5rem;
+}
+
+.btn a, .btn a:hover {
+	color: #fff;
+	text-decoration:none;
+}
+/*-------- Section Catalog ------ */
+#catalog {
+	background-color: #fff;
+	padding: 5em;
+}
+
+#catalog h4 {
+	margin-bottom: 1.5rem;
+}
+
+#catalog p:first-child {
+	font-size: 0.8rem;
+	letter-spacing: 2px;
+	color: #919297;
+}
+
+.product {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+
+#catalog > div:last-child {
+	color: #919297;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 3rem;
+	font-size: 0.9rem;
+}
+
+/*-------- Section Showroom------ */
+#showroom {
+	background-color: #FCF6EE;
+	padding: 6rem;
+	color: #6F6F75;
+	font-style: 0.9rem;
+	text-transform: uppercase;
+}
+
+#showroom h3 {
+	text-align: left;
+}
+
+#showroom span {
+	font-size: 0.8rem;
+}
+
+#showroom h5 {
+	margin-top: 5rem;
+}
+
+#showroom img {
+	max-width: 100%;
+	height: auto;
 }
 
 /*-------- Footer ------ */
 footer {
 	background-color: #0A0A0A;
 	color: #fff;
+	padding: 5rem;
+
 }
 footer ul {
 	display: flex;
 }
 
-footer h6 {
-	color: #6F6F75;
-}
 footer li {
 	flex-direction: row;
+	margin-right: 1rem;
+}
+
+footer a {
+	color: #fff;
+	text-decoration:none;
+}
+
+footer a:hover {
+	color: #6F6F75;
+	text-decoration:none;
 }
