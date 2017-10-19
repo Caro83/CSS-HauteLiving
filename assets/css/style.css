@@ -1,17 +1,17 @@
 /*------- FONT ----------*/
 @font-face {
-	font-family: 'MaisonNeue-Book', sans-serif;
+	font-family: 'MaisonNeue-Book';
 	src: url('../fonts/Maison Neue/MaisonNeue-Book.woff2');
 }
 
 @font-face {
-	font-family: 'MaisonNeueMono-Regular', sans-serif;
-	src: url('MaisonNeueMono-Regular.woff2');
+	font-family: 'MaisonNeueMono-Regular';
+	src: url('../fonts/Maison Neue/MaisonNeueMono-Regular.woff2');
 }
 
 /*--------BODY ------------*/
 body {
-	font-family: 'MaisonNeue-Book', sans-serif;
+	font-family: 'MaisonNeueMono-Regular', sans-serif;
 }
 
 /*-------- Titre-------- */
@@ -24,6 +24,7 @@ h2, h3, h4, h5 {
 h6 {
 	color: #6F6F75;
 	text-transform: uppercase;
+	font-size: 0.8rem;
 }
 
 h3 {
@@ -34,9 +35,6 @@ h4 {
 	font-size: 1.2rem;
 }
 
-h5 {
-	font-size: 0.9rem;
-}
 /*------- SLIDER ---------- 
 div#slider {
 	width: 100%;
@@ -122,7 +120,7 @@ div#slider {
 	55% { left: -100%;}
 	60% { left: -200%;}
 	85% { left: -200%;}
-	100% 25% { left: -300%;}
+	100% { left: -300%;}
 }
 
 div#slider div div {
@@ -130,7 +128,7 @@ div#slider div div {
 	width: 400%;
 	margin: 0;
 	padding: 0;
-	font-size: 0
+	font-size: 0;
 	left: 0;
 	text-align: left;
 	animation: 30s slidy infinite;
@@ -156,15 +154,74 @@ li {
 	text-align: center;
 }
 /*-------- Section New arrivals ------ */
+#new-arrivals {
+	margin: 5rem;
+}
 
+#new-arrivals img {
+	width: 100%;
+	height: auto;
+}
 
 /*-------- Section Journal ------ */
 #journal {
 	background-color: #FCF6EE;
+	padding: 5rem;
 }
 
-#journal div div:last-child div {
+#journal h3 {
+	margin: 1rem auto 4rem auto;
+}
+
+.mailing h5 {
+	color: #fff;
+	text-align: center;
+}
+.mailing {
 	background-color: #0A0A0A;
+	padding: 2rem;
+}
+
+.mailing h6 {
+	padding: 1rem;
+	text-align: center;
+	letter-spacing: 0.2rem;
+	line-height: 1.2rem;
+}
+.mailing span {
+	color: #fff;
+}
+
+input {
+	background-color: #0A0A0A;
+	border-bottom: 1px solid #6F6F75;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	color: #6F6F75;
+	text-align: center;
+
+}
+
+#journal div div {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.post {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+.post h5 {
+	font-size: 1.1rem;
+	padding: 0.5rem 0rem;
+}
+
+.post p {
+	color: #919297;
+	font-size: 0.9rem;
 }
 /*-------- Button "read the journal" ------ */
 .btn {
@@ -222,7 +279,7 @@ li {
 	background-color: #FCF6EE;
 	padding: 6rem;
 	color: #6F6F75;
-	font-style: 0.9rem;
+	font-size: 0.9rem;
 	text-transform: uppercase;
 }
 
@@ -236,6 +293,7 @@ li {
 
 #showroom h5 {
 	margin-top: 5rem;
+	font-size: 0.9rem;
 }
 
 #showroom img {
