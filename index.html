@@ -5,23 +5,51 @@
 	<title>Contemporary & Modern Furniture Chicago | Haute Living</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
 	<header>
-		<nav>
-			<div><img src="assets/img/magnifying-glass.svg"></div>
-			<div></div>
-			<div><img src="assets/img/menu-button-of-three-lines.svg"></div></div>
+
+		<div id="sideNAvigation" class="sidenav">
+			<div>Navigation</div>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">Catalog</a>
+			<a href="#">Brands</a>
+			<a href="#">Designers</a>
+			<a href="#">Journal</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+		</div>
+
+		<nav class="top-header">
+			<ul>
+				<li><img src="assets/img/magnifying-glass.svg"></li>
+				<li>Logo</li>
+				<li>
+					<a href="#" onclick="openNav()">
+	    				<svg width="30" height="30" id="icoOpen">
+		        			<path d="M0,5 30,5" stroke="#000" stroke-width="3"/>
+		        			<path d="M0,14 30,14" stroke="#000" stroke-width="3"/>
+		        			<path d="M0,23 30,23" stroke="#000" stroke-width="3"/>
+	    				</svg>
+  					</a>
+  				</li>
+			</ul>
 		</nav>
+
+		<div class="carousel" data-flickity='{ "lazyLoad": true }'>
+  			<div class="carousel-cell">
+    			<img class="carousel-cell-image" data-flickity-lazyload="assets/img/gaia-sofa-drum.png" alt="Sofa" />
+ 			</div>
+  			<div class="carousel-cell">
+   				<img class="carousel-cell-image" data-flickity-lazyload="assets/img/PB_PT_South_Coast_Villa_RP_115.jpg" alt="South Coast Villa" />
+  			</div>
+ 			<div class="carousel-cell">
+    			<img class="carousel-cell-image" data-flickity-lazyload="assets/img/Jaime_Hayon_portrait.jpg" alt="Jaime Hayon" />
+  			</div>
+		</div>
+
 		<!--<div id="slider">
-			<figure>
-				<img src="assets/img/gaia-sofa-drum.png" />
-				<img src="assets/img/PB_PT_South_Coast_Villa_RP_115.jpg" />
-				<img src="assets/img/Jaime_Hayon_portrait.jpg" />
-				<img src="assets/img/gaia-sofa-drum.png" />
-			</figure>
-		</div>-->
-		<div id="slider">
 			<div>
 				<div>
 					<img src="assets/img/gaia-sofa-drum.png" />
@@ -48,19 +76,7 @@
 					<img src="assets/img/gaia-sofa-drum.png" />
 				</div>
 			</div>
-		</div>
-
-		<div id="menu">
-			<div>Navigation</div>
-			<ul>
-				<li>Catalog</li>
-				<li>Brands</li>
-				<li>Designers</li>
-				<li>Journal</li>
-				<li>About</li>
-				<li>Contact</li>
-			</ul>
-		</div>
+		</div>-->
 	</header>
 	<div class="container-fluid">
 		<section id="new-arrivals">
@@ -236,5 +252,8 @@
 		</section>
 	</footer>
 
+
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
