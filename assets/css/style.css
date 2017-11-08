@@ -12,6 +12,7 @@
 /*--------Html, Body ------------*/
 html, body {
 	margin: 0;
+	overflow-x: hidden; 
 }
 
 body {
@@ -41,6 +42,7 @@ h4 {
 
 /*------- HEADER ---------- */
 header {
+	width: 100%;
 	position: relative;
 	z-index: 2;
 	background-color: #fff;
@@ -48,258 +50,7 @@ header {
 	margin: 0;
 }
 
-/*------- SLIDER ---------- 
-div#slider div {
-	width: 100%;
-	height: auto;
-	max-width: 9999px;
-}
-
-div#slider div div {
-	position: relative;
-	width: 400%;
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-	text-align: left;
-}
-
-div#slider div div img {
-	width: 25%;
-	height: auto;
-	float: left;
-}
-
-div#slider {
-	width: 100%;
-	max-width: 9999px;
-	overflow: hidden;
-}
-/*
-
-/*-------- NAV BAR ------ */
-
-.top-header {
-	background: transparent;
-	position: fixed;
-	z-index: 2;
-	color: #fff;
-	top: 0;
-	right: 0;
-	width: 100%;
-}
-
-.top-header ul {
-	display: flex;
-	justify-content: space-between;
-	padding : 2rem 3rem;
-
-}
-
-.top-header li {
-}
-
-.top-header img {
-	max-width: 30px;
-}
-
-li {
-	list-style: none;
-}
-/*-------- Main ------ */
-.container-fluid h3 {
-	text-align: center;
-
-}
-
-.container-fluid {
-	position: relative;
-	z-index: 1;
-	background-color: #fff;
-	margin: 0 0 20rem 0;
-	border: 1px solid #fff;
-}
-
-/*-------- Section New arrivals ------ */
-#new-arrivals {
-	margin: 5rem;
-}
-
-#new-arrivals img {
-	width: 100%;
-	height: auto;
-}
-
-/*-------- Section Journal ------ */
-
-#journal {
-	background-color: #FCF6EE;
-	padding: 5rem;
-}
-
-#journal h3 {
-	margin: 1rem auto 4rem auto;
-}
-
-.mailing h5 {
-	color: #fff;
-	text-align: center;
-}
-.mailing {
-	background-color: #0A0A0A;
-	padding: 2rem;
-}
-
-.mailing h6 {
-	padding: 1rem;
-	text-align: center;
-	letter-spacing: 0.2rem;
-	line-height: 1.2rem;
-}
-.mailing span {
-	color: #fff;
-}
-
-input {
-	background-color: #0A0A0A;
-	border-bottom: 1px solid #6F6F75;
-	border-top: 0px;
-	border-right: 0px;
-	border-left: 0px;
-	color: #6F6F75;
-	text-align: center;
-
-}
-
-#journal div div {
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.post {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	padding: 1rem;
-}
-
-.post h5 {
-	font-size: 1.1rem;
-	padding: 0.5rem 0rem;
-}
-
-.post p {
-	color: #919297;
-	font-size: 0.9rem;
-}
-/*-------- Button "read the journal" ------ */
-.btn {
-	background-color: #0A0A0A;
-	color: #fff;
-	padding: 1.5rem;
-	border: 0px;
-	text-transform: uppercase;
-	font-size: 0.8rem;
-	margin: 0 auto;
-	border-radius: 0rem;
-}
-
-.btn div::after {
-	content: url('../img/icon-arrow-right.png');
-	padding-left: 1.5rem;
-}
-
-.btn a, .btn a:hover {
-	color: #fff;
-	text-decoration:none;
-}
-/*-------- Section Catalog ------ */
-#catalog {
-	background-color: #fff;
-	padding: 5em;
-}
-
-#catalog h4 {
-	margin-bottom: 1.5rem;
-}
-
-#catalog p:first-child {
-	font-size: 0.8rem;
-	letter-spacing: 2px;
-	color: #919297;
-}
-
-.product {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 0.9rem;
-}
-
-#catalog > div:last-child {
-	color: #919297;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 3rem;
-	font-size: 0.9rem;
-}
-
-/*-------- Section Showroom------ */
-#showroom {
-	background-color: #FCF6EE;
-	padding: 6rem;
-	color: #6F6F75;
-	font-size: 0.9rem;
-	text-transform: uppercase;
-}
-
-#showroom h3 {
-	text-align: left;
-}
-
-#showroom span {
-	font-size: 0.8rem;
-}
-
-#showroom h5 {
-	margin-top: 5rem;
-	font-size: 0.9rem;
-}
-
-#showroom img {
-	max-width: 100%;
-	height: auto;
-}
-
-/*-------- Footer ------ */
-footer {
-	background-color: #0A0A0A;
-	color: #fff;
-	padding: 5rem;
-	position: fixed;
-	bottom: 0;
-	margin: 0;
-	z-index: 0;
-
-}
-footer ul {
-	display: flex;
-}
-
-footer li {
-	flex-direction: row;
-	margin-right: 1rem;
-}
-
-footer a {
-	color: #fff;
-	text-decoration:none;
-}
-
-footer a:hover {
-	color: #6F6F75;
-	text-decoration:none;
-}
-
-/* Carousel */
+/*-------- Carousel ---------- */
 
 .carousel {
   background: #FAFAFA;
@@ -436,4 +187,246 @@ a svg{
   display: flex;
   justify-content: space-around;
   padding: 2rem 0;
+}
+
+/*-------- NAV BAR ------ */
+
+.top-header {
+	background: transparent;
+	position: fixed;
+	z-index: 2;
+	color: #fff;
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+
+.top-header ul {
+	display: flex;
+	justify-content: space-between;
+	padding : 2rem 3rem;
+
+}
+
+.top-header li {
+}
+
+.top-header img {
+	max-width: 30px;
+}
+
+li {
+	list-style: none;
+}
+/*-------- Main ------ */
+.container-fluid h3 {
+	text-align: center;
+
+}
+
+.container-fluid {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	margin: 0 0 20rem 0;
+	border: 1px solid #fff;
+}
+
+/*-------- Section New arrivals ------ */
+#new-arrivals {
+	margin: 5rem;
+}
+
+#new-arrivals img {
+	width: 100%;
+	height: auto;
+}
+
+/*-------- Section Journal ------ */
+
+#journal {
+	background-color: #FCF6EE;
+	padding: 5rem;
+}
+
+#journal h3 {
+	margin: 1rem auto 4rem auto;
+}
+
+.mailing h5 {
+	color: #fff;
+	text-align: center;
+}
+.mailing {
+	background-color: #0A0A0A;
+	padding: 2rem;
+}
+
+.mailing h6 {
+	padding: 1rem;
+	text-align: center;
+	letter-spacing: 0.2rem;
+	line-height: 1.2rem;
+}
+.mailing span {
+	color: #fff;
+}
+
+input {
+	background-color: #0A0A0A;
+	border-bottom: 1px solid #6F6F75;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	color: #6F6F75;
+	text-align: center;
+
+}
+
+#journal div div {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.post {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+.post h5 {
+	font-size: 1.1rem;
+	padding: 0.5rem 0rem;
+}
+
+.post p {
+	color: #919297;
+	font-size: 0.9rem;
+}
+
+#journal a {
+	display: flex;
+}
+#journal a img {
+	margin: auto;
+	padding-top: 2rem;
+}
+
+/*-------- Button "read the journal" ------ */
+.btn {
+	background-color: #0A0A0A;
+	color: #fff;
+	padding: 1.5rem;
+	border: 0px;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	margin: 0 auto;
+	border-radius: 0rem;
+}
+
+.btn div::after {
+	content: url('../img/icon-arrow-right.png');
+	padding-left: 1.5rem;
+}
+
+.btn a, .btn a:hover {
+	color: #fff;
+	text-decoration:none;
+}
+/*-------- Section Catalog ------ */
+#catalog {
+	background-color: #fff;
+	padding: 5em;
+}
+
+#catalog h4 {
+	margin-bottom: 1.5rem;
+}
+
+#catalog p:first-child {
+	font-size: 0.8rem;
+	letter-spacing: 2px;
+	color: #919297;
+}
+
+.product {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+
+#catalog > div:last-child {
+	color: #919297;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 3rem;
+	font-size: 0.9rem;
+}
+
+/*-------- Section Showroom------ */
+#showroom {
+	background-color: #FCF6EE;
+	padding: 6rem;
+	color: #6F6F75;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+#showroom h3 {
+	text-align: left;
+}
+
+#showroom span {
+	font-size: 0.8rem;
+}
+
+#showroom h5 {
+	margin-top: 5rem;
+	font-size: 0.9rem;
+}
+
+#showroom img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*-------- Footer ------ */
+footer {
+	width: 100%;
+	background-color: #0A0A0A;
+	color: #fff;
+	padding: 4rem;
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	z-index: 0;
+
+}
+footer ul {
+	display: flex;
+}
+
+footer li {
+	flex-direction: row;
+	margin-right: 1rem;
+}
+
+footer a {
+	color: #fff;
+	text-decoration:none;
+}
+
+footer a:hover {
+	color: #6F6F75;
+	text-decoration:none;
+}
+
+footer>section {
+	padding-bottom: 2rem;
+}
+
+footer section {
+	display: flex;
+	flex-wrap: wrap;
 }
